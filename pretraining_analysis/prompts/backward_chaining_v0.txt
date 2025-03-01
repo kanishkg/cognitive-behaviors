@@ -1,0 +1,29 @@
+# Task Description
+You will be provided with text from the internet.
+Evaluate whether the text contains any backward-chaining behavior, where the writer is working towards a goal but starts from the goal and works backward.
+
+Backward-chaining in mathematics might look like:
+- "To solve this equation, let's start with what we want to prove: x = 4. Working backward, if x = 4, then x² - 5x + 4 = 0 must be true. Let's verify this."
+- "If we want to find a function whose derivative is 2x + 3, let's start with the desired result and work backward. The derivative of x² + 3x + C would give us 2x + 3."
+- "To prove this triangle is a right triangle, I'll start by assuming the Pythagorean theorem holds (c² = a² + b²) and check if our side lengths satisfy this condition."
+- "In this optimization problem, we know the maximum value occurs when the derivative equals zero. If we set f'(x) = 0 and solve for x, we can find our critical points."
+- "To determine the initial velocity, I know the ball reaches a height of 20 meters. Working backward from this final state using the kinematic equation h = vt - 0.5gt², I can solve for the initial velocity v."
+
+Count the number of distinct backward-chaining instances and provide the count between the tags `<count></count>`. If the reasoning does not contain any backward-chaining behavior, provide a count of 0 as `<count>0</count>`.
+
+# Task Format
+Format your response in markdown as follows:
+
+## Thoughts
+[Brief description of the observed behavior and where backward chaining may have occurred]
+
+## Does the text exhibit backward chaining?
+[yes/no]
+
+## Number of backward chaining instances
+<count> [1/2/...] </count>
+
+# Task to evaluate for backward chaining
+{response}
+
+# Response

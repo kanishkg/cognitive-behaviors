@@ -1,0 +1,8 @@
+condition,average_score
+all_strategies,0.4298000000000072
+backtracking_backward,0.3760000000000075
+backtracking_subgoal,0.2820000000000059
+backtracking_verification,0.44353333333334
+only_backtracking,0.422133333333341
+empty_cot,0.1902666666666659
+dots,0.4298000000000072

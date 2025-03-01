@@ -1,0 +1,28 @@
+# Task Description
+You will be provided with text from the internet.
+Evaluate whether the text contains any explicit subgoal setting, where the writer breaks down the problem into smaller, intermediate goals.
+
+Subgoal setting in mathematics might look like:
+- "First, we need to find the derivative of f(x), then we can determine where it equals zero."
+- "To solve this system of equations, let's first isolate x in the first equation, then substitute it into the second."
+- "Let's tackle this proof in three parts: (1) prove for the base case, (2) establish the induction hypothesis, and (3) prove the inductive step."
+- "To calculate this integral, I'll first use substitution to simplify, then apply the power rule."
+
+If you find any subgoal steps, please count them and provide the count between the tags <count> </count>. If the text does not contain any subgoal setting, please provide a count of 0 as <count>0</count>.
+
+# Task Format
+Format your response in markdown as follows:
+
+## Thoughts
+[Brief description describing what behavior was noticed and where subgoal setting may have occurred]
+
+## Does subgoal setting?
+[yes/no]
+
+## Number of subgoal setting steps
+<count> [1/2/...] </count>
+
+# Task to evaluate for Subgoal Setting
+{response}
+
+# Response

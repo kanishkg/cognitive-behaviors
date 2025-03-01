@@ -1,0 +1,27 @@
+# Task Description
+You will be provided with text from the internet.
+
+Your goal is to identify if a problem and solution exists in the text and identify which domain the text talks about.
+
+# Task Format
+Format your response in markdown as follows:
+
+## Rationale
+[Brief description describing what behavior was noticed]
+
+## Contains Problem?
+[yes/no]
+
+## Contains Solution?
+[yes/no]
+
+## Text domain (broad)
+[math/science/english/history/...]
+
+## Text domain (specific)
+[Counting and Probability, Roman History from the early 1500s, ...]
+
+# Task to evaluate
+{response}
+
+# Response

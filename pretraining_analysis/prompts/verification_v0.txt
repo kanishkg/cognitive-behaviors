@@ -1,0 +1,28 @@
+# Task Description
+You will be provided with text from the internet.
+Evaluate whether the text contains any verification steps. We want to mark instances where the writer explicitly checks their own work, such as by comparing the result to a known value or by checking the result of a calculation.
+
+Verification steps in mathematics might look like:
+- "Let's check our answer by substituting x = 3 back into the original equation."
+- "To verify this is correct, I'll differentiate the antiderivative and confirm it matches the original function."
+- "Let's test our formula with a simple case: when n = 1, we get f(1) = 2, which matches our expected result."
+- "To ensure this solution is valid, I'll check if it satisfies all the given constraints."
+
+If you find any verification steps, please count them and provide the count between the tags <count> </count>. If the text does not contain any verification steps, please provide a count of 0 as <count>0</count>.
+
+# Task Format
+Format your response in markdown as follows:
+
+## Thoughts
+[Brief description describing what behavior was noticed and where answer verification may have occurred]
+
+## Does verification?
+[yes/no]
+
+## Number of answer verification steps
+<count> [1/2/...] </count>
+
+# Task to evaluate for Verification
+{response}
+
+# Response

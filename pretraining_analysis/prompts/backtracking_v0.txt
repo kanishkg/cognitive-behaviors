@@ -1,0 +1,28 @@
+# Task Description
+You will be provided with text from the internet.
+Evaluate whether the text contains any backtracking behavior, where the writer realizes a path won't work and explicitly goes back to try a different approach. An example of backtracking is: "Let me try again", "Wait", "I made a mistake", or "we need to try a different sequence of operations". We want to mark instances where the writer abandons a thought and backtracks to a previous computation.
+
+Backtracking in mathematics might look like:
+- "I started with the wrong formula. Let's use integration by parts instead."
+- "This approach leads to a contradiction. Going back to the original equation..."
+- "I see the error in my calculation. Let's recalculate using..."
+- "This algebraic manipulation isn't simplifying as expected. Let's try factoring differently."
+
+Count the number of distinct backtracking instances and provide the count between the tags <count> </count>. If the writer does not backtrack, please provide a count of 0 as <count>0</count>.
+
+# Task Format
+Format your response in markdown as follows:
+
+## Thoughts
+[Brief description describing what behavior was noticed and where backtracking occurred]
+
+## Does backtrack?
+[yes/no]
+
+## Number of backtrack steps
+<count> [1/2/...] </count>
+
+# Task to evaluate for backtracking
+{response}
+
+# Response
