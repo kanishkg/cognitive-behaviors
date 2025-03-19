@@ -18,6 +18,8 @@
 
 This repository is based on TinyZero, which is a reproduction of [DeepSeek R1 Zero](https://github.com/deepseek-ai/DeepSeek-R1) in countdown built upon [veRL](https://github.com/volcengine/verl).
 
+All datasets and models will be released here on the [HF Collection](https://huggingface.co/collections/obiwan96/cognitive-behaviors-67db58981956dcedf0c80929).
+
 ## Installation
 
 ```
@@ -104,7 +106,7 @@ python pretraining_analysis/process_pretrain_labelled.py --dataset_name {dataset
 python pretraining_analysis/get_stats.py --dataset_name {dataset_name}
 ```
 ### Generate Synthetic Data
-We generate a new dataset with the labeled data.
+We generate a new dataset with the labeled data. To train a model for a broader set of downstream tasks (like gpqa or MATH), we recommend changing the prompt and processing more files from OpenWebMath or FineMath.
 ```
 # Label as COT
 python pretraining_analysis/relabel_pretrain_qa.py --user username --start 0 --end 1000000 --save_every 10000 --dataset_name {dataset_name} --mehtod {curated or negative}
