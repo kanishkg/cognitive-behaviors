@@ -117,15 +117,4 @@ python pretraining_analysis/save_parquets.py --dataset_name {dataset_name}
 ```
 We then run SFT on the new dataset to get a new primed base model and run PPO on it.
 
-## Citation
-```
-@misc{gandhi2025cognitivebehaviorsenableselfimproving,
-      title={Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs}, 
-      author={Kanishk Gandhi and Ayush Chakravarthy and Anikait Singh and Nathan Lile and Noah D. Goodman},
-      year={2025},
-      eprint={2503.01307},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2503.01307}, 
-}
-```
+
