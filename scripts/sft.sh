@@ -1,16 +1,3 @@
-#!/bin/bash
-
-#SBATCH --job-name=run_train          # Job name
-#SBATCH --account=cocoflops           # Account name
-#SBATCH --partition=cocoflops         # Partition name
-#SBATCH --time=08:00:00               # Run time (hh:mm:ss)
-#SBATCH -c 10                         # Number of CPU cores
-#SBATCH --gres=gpu:2                  # Number of GPUs
-#SBATCH --nodes=1                     # Number of nodes
-# SBATCH --nodelist=cocoflops-hgx-1   # (Optional) Specific node; uncomment if needed
-#SBATCH --mem=50G                     # Memory size
-#SBATCH --output=./slurm_logs/%x_%j.log  # Unique log file per job: jobName_jobID.log
-
 set -e  # Exit immediately if a command exits with a non-zero status
 
 source ~/.bashrc
